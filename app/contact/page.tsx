@@ -67,7 +67,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="p-8 lg:p-10 rounded-3xl border border-[#E2E2EE] bg-[#F5F5FA]">
               <h2 className="font-syne font-bold text-2xl text-[#0D0D1A] mb-8">Send us a message</h2>
-              <form className="space-y-6" action="mailto:hello@mayicreative.com.au" method="get" encType="text/plain">
+              <form className="space-y-6" action="https://formspree.io/f/mjgqvkrj" method="POST">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-xs font-syne font-bold text-[#6E6E8A] uppercase tracking-wider mb-2">
