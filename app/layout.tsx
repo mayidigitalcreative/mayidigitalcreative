@@ -74,13 +74,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable}`}>
       <body className="bg-bg text-text-primary font-inter cursor-none">
-        <CustomCursor />
-        <Navbar />
-        <PageTransition>
-          <main>{children}</main>
-        </PageTransition>
-        <Footer />
-        <CookieBanner />
+        <div style={{ width: '100%', maxWidth: '100vw', overflowX: 'clip', position: 'relative' }}>
+          <CustomCursor />
+          <Navbar />
+          <PageTransition>
+            <main>{children}</main>
+          </PageTransition>
+          <Footer />
+          <CookieBanner />
+        </div>
       </body>
     </html>
   )
