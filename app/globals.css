@@ -20,7 +20,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: clip;
+  overflow-x: hidden;
   max-width: 100%;
 }
 
@@ -28,9 +28,10 @@ body {
   background-color: #FFFFFF;
   color: #0D0D1A;
   font-family: var(--font-inter), sans-serif;
-  overflow-x: clip;
+  overflow-x: hidden;
   width: 100%;
   max-width: 100%;
+  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -17,7 +17,7 @@ export default function TickerBand() {
   const allItems = [...items, ...items]
 
   return (
-    <div className="overflow-hidden bg-[#0D0D1A] py-5">
+    <div className="relative overflow-hidden bg-[#0D0D1A] py-5">
       <motion.div
         className="flex whitespace-nowrap"
         animate={{ x: ['0%', '-50%'] }}
