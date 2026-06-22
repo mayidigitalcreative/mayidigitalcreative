@@ -1,7 +1,3 @@
-'use client'
-
-import { motion } from 'framer-motion'
-
 const items = [
   'Perth\'s Most Ambitious Agency',
   'SEO & Paid Media',
@@ -18,10 +14,8 @@ export default function TickerBand() {
 
   return (
     <div className="relative overflow-hidden bg-[#0D0D1A] py-5">
-      <motion.div
-        className="flex whitespace-nowrap"
-        animate={{ x: ['0%', '-50%'] }}
-        transition={{ repeat: Infinity, duration: 28, ease: 'linear' }}
+      <div
+        className="flex whitespace-nowrap ticker-scroll"
         style={{ width: 'max-content' }}
       >
         {allItems.map((item, i) => (
@@ -32,7 +26,7 @@ export default function TickerBand() {
             <span className="w-1 h-1 rounded-full bg-[#E8192C]/70 flex-shrink-0" />
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   )
 }

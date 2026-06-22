@@ -54,6 +54,16 @@ body {
   border-radius: 2px;
 }
 
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.ticker-scroll {
+  animation: ticker-scroll 28s linear infinite;
+  will-change: transform;
+}
+
 @layer utilities {
   .text-gradient-red {
     background: linear-gradient(135deg, #E8192C 0%, #FF3347 50%, #E8192C 100%);

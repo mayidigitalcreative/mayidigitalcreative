@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter, Syne } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
@@ -18,6 +18,12 @@ const syne = Syne({
   variable: '--font-syne',
   display: 'swap',
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+}
 
 export const metadata: Metadata = {
   title: {
