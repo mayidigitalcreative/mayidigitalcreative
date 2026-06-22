@@ -20,14 +20,17 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
   background-color: #FFFFFF;
   color: #0D0D1A;
   font-family: var(--font-inter), sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
