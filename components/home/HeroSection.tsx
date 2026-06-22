@@ -20,8 +20,23 @@ export default function HeroSection() {
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
-    if (video.readyState >= 2) setVideoLoaded(true)
-    video.play().catch(() => {})
+
+    const tryPlay = () => {
+      video.play().catch(() => {})
+    }
+
+    if (video.readyState >= 3) {
+      setVideoLoaded(true)
+      tryPlay()
+    } else {
+      video.addEventListener('canplay', tryPlay, { once: true })
+      video.addEventListener('loadeddata', () => setVideoLoaded(true), { once: true })
+      video.load()
+    }
+
+    return () => {
+      video.removeEventListener('canplay', tryPlay)
+    }
   }, [])
 
   const mouseX = useMotionValue(0)
@@ -62,6 +77,7 @@ export default function HeroSection() {
           autoPlay
           loop
           muted
+          preload="auto"
           playsInline
           onLoadedData={() => setVideoLoaded(true)}
           className={`w-full h-full object-cover transition-opacity duration-1000 ${videoLoaded ? 'opacity-100' : 'opacity-0'}`}
