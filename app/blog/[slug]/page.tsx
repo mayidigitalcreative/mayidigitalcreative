@@ -310,7 +310,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   return (
     <main className="bg-white">
       {/* Hero */}
-      <section className="relative pt-40 pb-16 overflow-hidden">
+      <section className="relative pt-40 pb-16" style={{ overflow: 'clip' }}>
         <div className="absolute top-0 right-0 w-[600px] h-[500px] rounded-full bg-[#4B3A9B]/10 blur-[120px] pointer-events-none" />
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <Link

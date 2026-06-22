@@ -43,7 +43,7 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       {/* Hero */}
-      <section className="relative pt-40 pb-24 overflow-hidden">
+      <section className="relative pt-40 pb-24" style={{ overflow: 'clip' }}>
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#4B3A9B]/10 blur-[120px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="text-xs font-syne font-bold text-[#E8192C] uppercase tracking-widest mb-6">Get In Touch</p>

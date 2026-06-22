@@ -49,7 +49,7 @@ export default function BlogPreview() {
   const rest = posts.slice(1)
 
   return (
-    <section ref={sectionRef} className="py-32 bg-[#F5F5FA] relative overflow-hidden">
+    <section ref={sectionRef} className="py-32 bg-[#F5F5FA] relative" style={{ overflow: 'clip' }}>
       <motion.div style={{ y: bgY }} className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-tl from-[#E8192C]/[0.03] via-transparent to-[#4B3A9B]/[0.02]" />
       </motion.div>

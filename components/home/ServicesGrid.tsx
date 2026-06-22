@@ -25,7 +25,7 @@ export default function ServicesGrid() {
   const marqueeX = useTransform(scrollYProgress, [0, 1], ['0%', '-30%'])
 
   return (
-    <section ref={sectionRef} className="py-32 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-32 bg-white relative" style={{ overflow: 'clip' }}>
       {/* ── SECTION LABEL ── */}
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">

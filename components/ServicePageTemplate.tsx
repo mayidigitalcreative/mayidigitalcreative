@@ -53,7 +53,7 @@ export default function ServicePageTemplate({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       {/* Hero */}
-      <section className="relative pt-40 pb-24 overflow-hidden">
+      <section className="relative pt-40 pb-24" style={{ overflow: 'clip' }}>
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#E8192C]/[0.07] blur-[120px] pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#E8192C]/[0.04] blur-[100px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

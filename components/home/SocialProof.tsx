@@ -19,7 +19,7 @@ export default function SocialProof() {
   const lineScale = useTransform(scrollYProgress, [0.1, 0.5], [0, 1])
 
   return (
-    <section ref={sectionRef} className="py-32 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-32 bg-white relative" style={{ overflow: 'clip' }}>
       {/* Vertical line */}
       <div className="absolute left-1/2 top-0 bottom-0 w-px bg-[#E2E2EE] hidden lg:block" />
 

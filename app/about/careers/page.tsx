@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function CareersPage() {
   return (
     <main className="bg-white">
-      <section className="relative pt-40 pb-32 overflow-hidden">
+      <section className="relative pt-40 pb-32" style={{ overflow: 'clip' }}>
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-[#4B3A9B]/10 blur-[120px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="text-xs font-syne font-bold text-[#E8192C] uppercase tracking-widest mb-6">Careers</p>

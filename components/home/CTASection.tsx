@@ -14,7 +14,7 @@ export default function CTASection() {
   const textY = useTransform(scrollYProgress, [0, 1], [40, -40])
 
   return (
-    <section ref={ref} className="relative py-48 overflow-hidden bg-[#0D0D1A]">
+    <section ref={ref} className="relative py-48 bg-[#0D0D1A]" style={{ overflow: 'clip' }}>
       {/* Top separator line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-px bg-gradient-to-r from-transparent via-[#E8192C]/40 to-transparent" />
 

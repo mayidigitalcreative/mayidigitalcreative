@@ -50,7 +50,7 @@ export default function HeroSection() {
   const parallaxY = useTransform(springY, [-1, 1], ['-2%', '2%'])
 
   return (
-    <section ref={sectionRef} className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-white">
+    <section ref={sectionRef} className="relative h-screen min-h-[700px] flex items-center justify-center bg-white" style={{ overflow: 'clip' }}>
 
       {/* ── VIDEO BACKGROUND ── */}
       <motion.div

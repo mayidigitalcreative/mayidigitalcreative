@@ -13,7 +13,7 @@ export default function TickerBand() {
   const allItems = [...items, ...items]
 
   return (
-    <div className="relative overflow-hidden bg-[#0D0D1A] py-5">
+    <div className="relative bg-[#0D0D1A] py-5" style={{ overflow: 'clip' }}>
       <div
         className="flex whitespace-nowrap ticker-scroll"
         style={{ width: 'max-content' }}

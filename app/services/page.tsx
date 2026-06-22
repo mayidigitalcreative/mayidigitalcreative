@@ -67,7 +67,7 @@ export default function ServicesPage() {
   return (
     <main className="bg-white">
       {/* Hero */}
-      <section className="relative pt-40 pb-24 overflow-hidden">
+      <section className="relative pt-40 pb-24" style={{ overflow: 'clip' }}>
         <div className="absolute top-0 right-0 w-[700px] h-[700px] rounded-full bg-[#E8192C]/10 blur-[140px] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="text-xs font-syne font-bold text-[#E8192C] uppercase tracking-widest mb-6">Our Services</p>

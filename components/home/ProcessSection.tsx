@@ -19,7 +19,7 @@ export default function ProcessSection() {
   const bgY = useTransform(scrollYProgress, [0, 1], ['-5%', '5%'])
 
   return (
-    <section ref={sectionRef} className="py-32 bg-[#F5F5FA] relative overflow-hidden">
+    <section ref={sectionRef} className="py-32 bg-[#F5F5FA] relative" style={{ overflow: 'clip' }}>
       <motion.div style={{ y: bgY }} className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-gradient-to-br from-[#4B3A9B]/5 via-transparent to-[#E8192C]/3" />
       </motion.div>
